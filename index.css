@@ -1,0 +1,22 @@
+html, body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background-image: url('./partyguy.jpg');
+  background-size: 30px;
+}
+
+.centered {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+}
