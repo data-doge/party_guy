@@ -14,9 +14,7 @@ $(window).load(function () {
   $.each($('.circle'), function (index, value) {
     var degrees = 0;
     setInterval(function () {
-      $(value).css({
-        'webkit-transform' : 'rotate(-' + degrees + 'deg)'
-      })
+      $(value).css({'webkit-transform' : 'rotate(-' + degrees + 'deg)'})
       degrees++;
     }, index + 30)
   });
