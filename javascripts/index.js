@@ -1,3 +1,6 @@
+var circleRotationOffsetSpeed = randPosInt(50);
+var bodyRotationSpeed = 30;
+
 $(window).load(function () {
 
   for (var i = 1; i < 100; i++) {
@@ -16,13 +19,13 @@ $(window).load(function () {
     setInterval(function () {
       $(value).css({'webkit-transform' : 'rotate(-' + degrees + 'deg)'})
       degrees++;
-    }, index + 30)
+    }, index + circleRotationOffsetSpeed)
   });
 
   var degrees = 0;
   setInterval(function () {
     $('body').css({'webkit-transform' : 'rotate(-' + 5 * degrees + 'deg)'});
     degrees++;
-  }, 30)
+  }, bodyRotationSpeed)
 
 });
