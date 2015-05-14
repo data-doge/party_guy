@@ -1,11 +1,11 @@
-$(document).ready(function () {
+$(window).load(function () {
 
   for (var i = 1; i < 100; i++) {
     var color = ( i % 2 === 0 ? 'red' : 'black');
-    $circle = $("<div class='centered circle'></div>").css({
+    var $circle = $("<div class='centered circle'></div>").css({
       'background' : color,
-      'height': 5* i,
-      'width': 5* i,
+      'height': 5 * i,
+      'width': 5 * i,
       'z-index' : -1 * i
     });
     $('body').append($circle);
