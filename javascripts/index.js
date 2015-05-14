@@ -1,5 +1,5 @@
 var circleRotationOffsetSpeed = randPosInt(50);
-var bodyRotationSpeed = 30;
+var containerRotationSpeed = 30;
 
 $(window).load(function () {
 
@@ -11,7 +11,7 @@ $(window).load(function () {
       'width': 5 * i,
       'z-index' : -1 * i
     });
-    $('body').append($circle);
+    $('#div-container').append($circle);
   }
 
   $.each($('.circle'), function (index, value) {
@@ -24,8 +24,8 @@ $(window).load(function () {
 
   var degrees = 0;
   setInterval(function () {
-    $('body').css({'webkit-transform' : 'rotate(-' + 5 * degrees + 'deg)'});
+    $('#div-container').css({'webkit-transform' : 'rotate(-' + 5 * degrees + 'deg)'});
     degrees++;
-  }, bodyRotationSpeed)
+  }, containerRotationSpeed)
 
 });
